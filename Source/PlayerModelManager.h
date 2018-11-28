@@ -51,6 +51,20 @@ struct Player_Model {
 	void playerStock(Player_Model & enemy_player_model);
 	void readPlayerLog(Player_Model & enemy_player_model);
 	void writePlayerLog(Player_Model & enemy_player_model, bool gameComplete);
+
+	int minTime[29];
+	int maxTime[29];
+	int minStock[29];
+	int maxStock[29];
 	int playerData[29];
+	int oldMinStock[29];
+	int oldMinTime[29];
+	int oldMaxStock[29];
+	int oldMaxTime[29];
+
+	int minStockAverage[29];
+	int minTimeAverage[29];
+	int maxStockAverage[29];
+	int maxTimeAverage[29];
 
 };
