@@ -51,6 +51,7 @@ Building_Gene CUNYAIModule::buildorder;
 // Initalize scouting manager once on startup
 ScoutingManager scouting;
 
+
 void CUNYAIModule::onStart()
 {
 	//foundDetector = false;
