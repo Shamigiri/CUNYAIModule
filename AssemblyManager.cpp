@@ -730,11 +730,7 @@ bool CUNYAIModule::buildOptimalUnit(const Unit &morph_canidate, map<UnitType, in
     bool flying_class = false;
 
     for (auto &potential_type : combat_types) {
-<<<<<<< HEAD
-        if (potential_type.first.airWeapon() != WeaponTypes::None)  up_shooting_class = true;
-=======
         if (potential_type.first.airWeapon() != WeaponTypes::None)  up_shooting_class = true; 
->>>>>>> parent of 198395a6... Revert "Merge remote-tracking branch 'upstream/Student_Work'"
         if (potential_type.first.groundWeapon() != WeaponTypes::None )  down_shooting_class = true;
         if (potential_type.first.isFlyer() && friendly_player_model.e_relatively_weak_against_air_)  flying_class = true;
     }
