@@ -250,7 +250,7 @@ void Player_Model::writePlayerLog(Player_Model & enemy_player_model, bool gameCo
                     ofstream enemyData;
                     enemyData.open(".\\bwapi-data\\write\\" + Broodwar->enemy()->getName() + ".txt", ios_base::app);
                     for (int i = 0; i < 29; i++)
-                            enemyData << left << setw(30) << enemy_player_model.units_.unitInventoryLabel[i];
+                            enemyData << left << setw(35) << enemy_player_model.units_.unitInventoryLabel[i];
                     enemyData << endl;
                 }
                 ofstream earliestDate;
@@ -260,7 +260,7 @@ void Player_Model::writePlayerLog(Player_Model & enemy_player_model, bool gameCo
                 {
                     stringstream ss;
                     ss << enemy_player_model.minStock[i] << " , " << enemy_player_model.minTime[i] << " , " << enemy_player_model.maxStock[i] << " , " << enemy_player_model.maxTime[i];
-                    earliestDate << left << setw(30) << ss.str();
+                    earliestDate << left << setw(35) << ss.str();
                 }
                 earliestDate << endl;
                 earliestDate.close();
